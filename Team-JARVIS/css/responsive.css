@@ -1,0 +1,222 @@
+
+@media screen and (min-width:647px) and (max-width:828px) {
+    .header{
+        width:100vw;
+        height:100px;
+        gap:0rem;
+        flex-direction: row;
+        
+    }
+    .nav>ul {
+        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-end;
+        gap:0px;
+        padding-left: 0px;
+    }
+    .nav li{
+        margin: 0px 10px;
+    }
+    span.button{
+        padding:5px 30px;
+    }
+    .footer-head{
+        flex-wrap: wrap;
+    }
+    .dropdown-content{
+        top:120px;
+    }
+    .nav>ul>li.dropdown:hover .dropdown-content{
+        top:90px;
+    }
+    /*  */
+    .arrow:nth-of-type(2){
+        left: 86%;
+        text-align: right;
+    }
+    .arrow2:nth-of-type(2){
+        left: 86%;
+        text-align: right;
+    }
+    .Main-headings:before{
+        width:10px;
+    }
+    .Main-headings:after{
+        width: 10px;
+    }
+    .checklb{
+        font-size:1rem;
+    }
+    .button>input{
+        font-size: 1rem;
+    }
+    .blog-cards-home{
+        /* display: flex; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+}
+  @media screen and (min-width:827px) and (max-width:965px) {
+    .nav>ul{
+        margin-top: 10px;
+    }
+    .dropdown-content{
+        top:130px;
+    }
+    .nav>ul>li.dropdown:hover .dropdown-content{
+        top:85px;
+    }
+    /*  */
+    .arrow:nth-of-type(2){
+        left: 90%;
+        text-align: right;
+    }
+    .arrow2:nth-of-type(2){
+        left: 90%;
+        text-align: right;
+    }
+    .checklb{
+        font-size:1.3rem;
+    }
+    .button>input{
+        font-size: 1.3rem;
+    }
+    .blog-cards-home{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+  }
+
+  @media screen and (min-width:300px) and (max-width:646px) {
+    .header{
+        /* background-color:#FFB100; */
+        background-color: whitesmoke;
+        padding:0px 0px;
+        display:flex;
+    }
+    .header> div> .logo{
+        margin:5px;
+        padding: 20px;
+    }
+    .nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        color: #051f37;
+        transform: translate-Y(-13px);    
+    }
+    span.button{
+        background-color:#051f37;
+        padding:5px 30px;
+        box-shadow: 3px 3px 10px 0px #3c3d3dcd,
+        inset 2px 14px 2px 0px #11385c;
+        color: whitesmoke;
+        font-size: 1rem;
+     }
+    span.button:hover{
+        box-shadow:3px 10px 10px 0px #4445454d,
+        inset 2px 5px 2px 0px #11385c;
+    }
+    .footer-head{
+        flex-wrap: wrap;
+    }
+    .hotel-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /*  */
+    .form-button>span>input{
+        color: white;
+    }
+    /*  */
+    .arrow:nth-of-type(2){
+        left: 80%;
+        text-align: right;
+    }
+    .arrow2:nth-of-type(2){
+        left: 80%;
+        text-align: right;
+    }
+    .sliding-cards{
+        margin:10px 1px;
+    }
+    #sliding-cards-1{
+        margin:10px 1px;
+    }
+    /*  */
+    .Main-headings{
+        background: white;
+    }
+    .column img:hover{
+        transform:rotate(7deg)scale(1.6);
+        border: 1px solid white;
+        transition: .3s ease-in-out;
+    }
+    /* .check{
+        flex-direction: column;
+        align-content: center;
+        align-items:center;
+    } */
+    /* .checklb{
+
+        font-size:1rem;
+
+    } */
+    /* .check>div>span{
+        font-size: 1rem;
+        border: 1px solid white;
+    } */
+    /* .check-dest,.checkinp{
+        font-size: 10px;
+      } */
+    /* .check>div>span>input{
+        color: whitesmoke;
+        font-size: 1rem;
+    } */
+    /* .check>div>.button{
+        padding: 5px 5px;
+        margin-bottom: -10px;
+        color: aqua;
+
+    } */
+    .check-in-box-home{
+        /* top:280px;
+        height: 100px; */
+        visibility:hidden;
+    }
+    .hero-title-line{
+        top:150px;
+    }
+    .blog-cards-home{
+        /* display: flex; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width:0px) and (max-width:299px){
+    .nav{
+        display:none;
+    }
+}
+/* @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}  */

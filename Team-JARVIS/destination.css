@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+img{
+    height: 100%;
+    width:100%;
+}
+.conatiner{
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
+    
+}
+.conatiner .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:10px;
+   
+
+}
+.conatiner .img-container .image{
+    height:390px;
+    width:330px;
+    /* border: 10px solid white; */
+    /* filter:brightness(0.8); */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.3); */
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+  text-align: center;
+  color:white;
+  box-shadow: 0px 0px 24px  #717171;
+
+}
+.conatiner .img-container .image .cont{
+    position: absolute;
+    left:20px;
+    bottom:10px;
+    font-size: 20px;
+    font-weight: 700;
+    /* color: white; */
+}
+
+.conatiner .img-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+        filter:brightness(0.7);
+
+}
+.conatiner .img-container .image:hover img{
+    transform: scale(1.1);
+}
+.dest{
+    /* margin:30px;
+    color:#051f37; */
+    font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  margin: 20px auto;
+  color: #051f37;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+
+}
+.Main-headings {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin: 30px auto;
+    color:#bf8705;
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+  }
+  .Main-headings:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background:#FFB100;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .Main-headings:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background:#FFB100;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+.dest span{
+    color:#Fb0;
+}
+@media screen and (max-width:420px){
+    .dest h1{
+        font-size:30px;
+    }
+    
+}

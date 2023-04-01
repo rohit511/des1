@@ -1,0 +1,417 @@
+/* Slider */
+.slider-container{
+    margin:0 auto;
+    margin-top:0px;
+    position: relative;
+    z-index: -1;
+  }
+  .mySlides {
+    display: none;
+  }
+  .slideshow-container img {
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    object-fit:fill;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    height:auto;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    z-index: -1;
+  }
+  
+  /* Hero Heading */
+  .hero-title-line{
+    width: 100vw;
+    position:absolute;
+    font-size: 3vw;
+    color:white;
+    background: transparent;
+    margin: 0 auto;
+    z-index:1;
+    top:200px;
+    word-spacing: 40px;
+  
+  }
+  .hero-title-line>h2{
+    text-align: center;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+    font-family: 'Oswald', sans-serif;
+  }
+  /*  */
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom: 50px;
+    z-index: 2;
+  }
+  .active1 {
+    background-color: #717171;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  /*  */
+  
+  main{
+    width: 100vw;
+  }
+  
+  /* check-in-box-home */
+  .check-in-box-home{
+    width: 90vw;
+    height: 120px;
+    background-color:#051f37f0;
+    position:absolute;
+    top:450px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgba(245, 245, 245, 0.824);
+  }
+  .check{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .checklb{
+    color:#FFB100;
+    font-weight: 600;
+    font-size:1.5rem;
+  }
+  .check-dest,.checkinp{
+    background: #051f37;
+    border: 2px solid white;
+    color: whitesmoke;
+    border-radius: 2px;
+  }
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  .button>input{
+    border-style: none;
+    background: transparent;
+    font-weight: 700;
+    color: #051f37;
+    font-size: 1.4rem;
+  }
+  /* ----------- */
+  
+  
+  /* owl carpusel for destination */
+  section{
+    overflow-x: hidden;
+  }
+  .card-slider-conatiner{
+    width: 100vw;
+    height:auto ;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+  .arrow{
+    position: absolute;
+      top: 40%;
+      font-size: 60px;
+      font-weight: bold;
+      color:white;
+      cursor: pointer;
+      left:17px;
+      z-index:2;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #051f37a3;
+  }
+  .arrow:nth-of-type(2){
+    left: 93%;
+    text-align: right;
+  }
+  .card-slider{
+    width: 100vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: hidden;
+    background:whitesmoke;
+  }
+  .card-slider img {
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #9d9b9ddc;
+    
+  }
+  .card-slider::-webkit-scrollbar{
+    visibility: hidden;
+  }
+  .sliding-cards{
+    min-width: 300px;
+    height: auto;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    padding: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 10px;
+    transition: 0.5s all;
+    border-radius: 5px;
+    
+  }
+  .image-wrapper{
+    width: auto;
+    height: 200px;
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .image-wrapper img{
+    width:280px;
+    height:200px;
+    object-fit:cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .image-wrapper .slider-city-names{
+      position:absolute;
+      bottom:20px;
+      right:10px;
+      padding: 5px;
+      color:white;
+      text-shadow: -1px 4px 2px rgba(0,0,0,0.6);
+      z-index:1;
+      border-radius: 5px;
+      font-size: 2.5rem;
+  }
+  /*  */
+  
+  /* owl carousel for What's New */
+  .card-slider-conatiner2{
+    width: 100vw;
+    height:500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+  .arrow2{
+    position: absolute;
+      top: 20%;
+      font-size: 60px;
+      font-weight: bold;
+      color:white;
+      cursor: pointer;
+      left:17px;
+      z-index:2;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #051f37a3;
+  }
+  .arrow2:nth-of-type(2){
+    left: 93%;
+    text-align: right;
+  }
+  #sliding-cards-1{
+      min-width: 300px;
+      height: auto;
+      position: relative;
+      left: 0px;
+      text-align: center;
+      padding: 10px;
+      font-size: 100px;
+      font-weight: bold;
+      color: white;
+      margin: 10px 10px;
+      transition: 0.5s all;
+      border-radius: 5px;   
+    
+  }
+  .slider-info{
+    width: 100%;
+    height:130px;
+    position:absolute;
+    background-color:white;
+    bottom:1px;
+    z-index: 1;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  
+  }
+  .image-wrapper1 .card-type{
+    position:absolute;
+    top:10px;
+    right:10px;
+    padding: 5px;
+    color:black;
+    background-color:rgba(245, 245, 245, 0.868);
+    z-index:1;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  .image-wrapper1{
+    width: auto;
+    height:300px;
+    position:relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #9d9b9ddc;
+  }
+  .image-wrapper1 img{
+    width:280px;
+    height:270px;
+    object-fit:cover;
+    overflow: hidden;
+  }
+  .slider-info >h4{
+    font-size: 1.8rem;
+    color:#bf8705;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+    padding:5px 10px;
+  }
+  .slider-info>p{
+    font-size: 1.2rem;
+    color:gray;
+    padding: 5px;
+  }
+  .image-wrapper1>a>div>button.button{
+    width: 120px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    color: #0b2a46;
+  }
+  
+  /* gallary-section */
+  .home-gallary{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .column img:hover{
+    transform:rotate(7deg)scale(1.2);
+    border: 3px solid white;
+    transition: .3s ease-in-out;
+  }
+  /*  */
+  
+  /* Blog section */
+  .blog-cards-home{
+    width: 100%;
+    height:auto;
+    background-color:rgba(250, 250, 210, 0.499);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .blog-card-wrapper{
+    width:350px;
+    height: 220px;
+    margin:15px 10px ;
+    background-color: #bf8705;
+    border-radius: 5px;
+    position:relative;
+    box-shadow: 0 0 5px #9d9b9ddc;
+  }
+  .blog-card-info{
+    position:absolute;
+    width:100%;
+    height: 80px;
+    bottom: 0px;
+    z-index: 1;
+    background-color:white;
+    border-radius: 5px;
+  }
+  .blog-card-wrapper img{
+    width:350px;
+    height:150px;
+    object-fit:cover;
+    border-radius: 5px;
+  }
+  .blog-card-info>h4{
+    font-size:1.9rem;
+    color:#bf8705;
+    padding:8px;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  .blog-card-info>p{
+    padding: 5px;
+    font-size: 1.3rem;
+    color: gray;
+  }
+  .type{
+    position:absolute;
+    z-index: 1;
+    width: fit-content;
+    color: #051f37;
+    background-color: rgba(255, 255, 255, 0.779);
+    padding: 8px 14px;
+    font-size:1.rem;
+    font-weight:700;
+    border-radius: 5px;
+    top:5px;
+    right:5px;
+    
+  }
+  
+  /* hover on cards> destination & what's new */
+  .blog-card-wrapper:hover,
+  #sliding-cards-1:hover{
+    box-shadow: 0 0 10px darkgrey;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .6s;
+    
+  }
+  .image-wrapper img:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: .6s;
+    border-radius: 10px;
+  }
+  /*  */
+  

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="container" id="blur">
+        <div class="content">
+            <form>
+                <h2 class="heading997">Book Your Stay</h2>
+                <label for ="name">Name</label>
+                <input type="text" id="name" placeholder="name" required>
+                <label for ="location" for="location">Location</label>
+                <select id="location" required>
+                    <option>choose location</option>
+                 <option value="delhi">delhi</option>
+                 <option value="dharamshala">Dharamshala</option>
+                 <option value="Gangtok">Gangtok</option>
+                 <option value="Goa">Goa</option>
+                 <option value="Hyderabad">Hyderabad</option>
+                 <option value="Jaipur">Jaipur</option>
+                 <option value="Jaisalmer">Jaisalmer</option>
+                 <option value="Jodhpur">Jodhpur</option>
+                 <option value="Kesar devi">Kesar devi</option>
+                 <option value="leh">Leh</option>
+                 <option value="shimla">Shimla</option>
+                 <option value="nanital">Nanital</option>
+                 <option value="Mussoori">Mussoori</option>
+                 <option value="Ooty">Ooty</option>
+                 <option value="Sri Nagar">Sri Nagar</option>
+                 <option value="PushKar">PushKar</option>
+
+                </select>
+                <label for="date">Start date</label>
+                <input type="date" id="date" placeholder="Start date" >
+                <label for="date" >End date</label>
+                <input type="date" id="date"placeholder="End dats" >
+                <label for="number" >Phone number</label>
+                <input type="phone" id="number" placeholder="Phone number" >
+                <label for="number1">No of room</label>
+                <input type="number" id="number1" placeholder="No of room" required>
+                <label for="price">Select Amount</label>
+                <select id="price" >
+                    <option>Select Amount</option>
+                    <option>₹599</option>
+                    <option>₹549</option>
+                    <option>₹749</option>
+                    <option>₹649</option>
+                    <option>₹799</option>
+                    <option>₹579</option>
+                    <option>₹879</option>
+                    <option>₹999</option>
+                    <option>₹699</option>
+                    <option>₹499</option>
+
+                </select>
+                <!-- <img src="images/nanital stay.jpg"> -->
+                
+           <!-- <a href="#" type="submit" value="Book" onclick="toggle()" class="button" disabled>Book</a> -->
+           <!-- <input type="submit" id="register" value="Register" disabled="disabled" class="button
+           " onclick="toggle()"/> -->
+           <button type="submit" class="button" onclick="toggle()" disabled>Book</button>
+
+ 
+
+            </form>
+
+        </div>
+    </div>
+    <div id="popup">
+        <div class="move">
+        <img src="https://img.icons8.com/color/48/null/checked-radio-button--v1.png"/>
+        <h2>Thank You!</h2>
+        <p>Thank You Your Details have been submitted successfully.</p>
+        <a href="#" onclick="toggle()" class="button" > close</a>
+    </div>
+
+    </div>
+
+  
+
+    <script src="book.js"></script>
+    </div>
+</body>
+</html>
